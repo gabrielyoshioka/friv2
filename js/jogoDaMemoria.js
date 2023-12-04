@@ -33,7 +33,7 @@ const createElement = (tag, className) =>{
 /*exibir a mensagem que ganhou e volta para a pagina inicial*/
 const Alerta = () => {
     Swal.fire({
-        text:   'Parabéns',
+        text:   `Parabén, seu tempo é de ${timer.innerHTML} segundos`,
         title: 'Venceu!',
     }).then((resultado) =>{
         if(resultado.isConfirmed){
