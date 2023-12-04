@@ -28,7 +28,7 @@ header {
     background-color: rgb(193, 217, 143);
     font-size: 1.5em;
     width: 36%;
-    padding: 30px;
+    padding: 20px;
     margin: 0 auto; 
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -41,7 +41,7 @@ header {
     gap: 15px;
     width: 36%;
     height: 30%;
-    padding: 5px 15px 5px;
+    padding: 5px 10px 5px;
     background-color: rgb(39, 22, 36, 30%);
     margin: 0 auto;
     margin: 0 auto;
@@ -57,8 +57,8 @@ header {
     position: relative;
     transition: all 400ms ease; /*transição tempo e tipo*/
     transform-style: preserve-3d;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    /* margin-bottom: 10px;
+    margin-top: 10px; */
 }
 
 /*criando uma class geral para a formatação comum 
