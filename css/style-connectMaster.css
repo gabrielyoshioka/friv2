@@ -1,0 +1,47 @@
+.game-board {
+  background-image: url('https://images3.alphacoders.com/118/1187753.png');
+  background-size: cover; /* 背景图覆盖整个div，保持纵横比 */
+  background-position: center; /* 将背景图居中 */
+  display: grid;
+  grid-template-columns: repeat(8, 80px);
+  grid-template-rows: repeat(8, 80px);
+  margin-top: 3%;
+}
+
+.game-tile {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(0, 0, 0, 0);
+  cursor: pointer;
+
+  border: 2px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.game-tile:hover {
+  transform: scale(1.13);
+}
+
+.game-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ima {
+justify-content: center;
+align-items: center;
+}
+
+.game-board {
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
