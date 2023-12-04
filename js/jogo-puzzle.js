@@ -33,27 +33,6 @@ window.onload = function(){
     }
 }
 
-/*exibir a mensagem que ganhou e regarrega a pagina*/
-const Alerta = () => {
-    Swal.fire({
-        text:   `Parabéns, a quantidade de movimentos é de ${$turns}`,
-        title: 'Montado!',
-    }).then((resultado) =>{
-        if(resultado.isConfirmed){
-            window.location.href = 'jogo-puzzle.html'
-        }
-    })
-}
-
-/*função que checa a ordem, se estiver de 1 a 9 o jogo termina
-const checarFimJogo = () =>{
-    const ordem = document.querySelectorAll(`${imgOrderCerta}`);
-
-    if(ordem != isAdjacent){
-        Alerta();
-    }
-}*/
-
 function dragStart(){
     currTile = this;
 }
@@ -104,9 +83,6 @@ function dragEnd() {
 
             turns += 1;
             document.getElementById("turns").innerText = turns;
-            if (currTile.src !== imgOrderCerta[r] && otherTile.src !== imgOrderCerta[c]) {
-                alert('SAIIII');
-            }
         }
     }
 }
