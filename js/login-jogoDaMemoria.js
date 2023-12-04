@@ -4,7 +4,7 @@ const form = document.querySelector('.login_formulario');
 
 
 const validarInput = ({target}) =>{
-    if(target.value.length > 3){
+    if(target.value.length > 2){
         button.removeAttribute('disabled');
         return;
     }
