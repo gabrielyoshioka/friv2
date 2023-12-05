@@ -37,7 +37,7 @@ const Alerta = () => {
         title: 'Venceu!',
     }).then((resultado) =>{
         if(resultado.isConfirmed){
-            window.location.href = 'login-jogoDaMemoria.html'
+            window.location.href = 'jogoDaMemoria.html'
         }
     })
 }
