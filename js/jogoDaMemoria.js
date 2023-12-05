@@ -1,6 +1,5 @@
 const grid = document.querySelector('.grid');//armazenar as cartas do jogo.
 //const spanJogador = document.querySelector('.jogador');//nome do jogador
-spanJogador = Jogo da Memória;
 const timer = document.querySelector('.timer');//tempo
 
 /*array para armazenar as imagens das cartas do jogo*/
@@ -153,7 +152,7 @@ window.onload = () => {
 
  
     /*defindo o nome do jogador*/
-    spanJogador.innerHTML = localStorage.getItem('player');
+    // spanJogador.innerHTML = localStorage.getItem('player');
     startTimer();
     carregarJogo();
 }
