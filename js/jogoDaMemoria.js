@@ -91,7 +91,7 @@ const reviewCarta = ({target}) => {
 /*verificando se a carta já foi clicada*/
 
     if(primeiraCarta == ''){
-        target.parentNode.classList.add('review-carta');
+        target.parentNode.classList.add('review-carta');//exibir a carta com a face virada para cima.
         primeiraCarta = target.parentNode;
     } else if(segundaCarta == ''){
         target.parentNode.classList.add('review-carta');
