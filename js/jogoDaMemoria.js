@@ -1,5 +1,6 @@
 const grid = document.querySelector('.grid');//armazenar as cartas do jogo.
-const spanJogador = document.querySelector('.jogador');//nome do jogador
+//const spanJogador = document.querySelector('.jogador');//nome do jogador
+spanJogador = Jogo da Memória;
 const timer = document.querySelector('.timer');//tempo
 
 /*array para armazenar as imagens das cartas do jogo*/
@@ -33,7 +34,7 @@ const createElement = (tag, className) =>{
 /*exibir a mensagem que ganhou e volta para a pagina inicial*/
 const Alerta = () => {
     Swal.fire({
-        text:   `Parabéns ${spanJogador.innerHTML}, seu tempo é de ${timer.innerHTML} segundos`,
+        text:   `Parabéns, seu tempo é de ${timer.innerHTML} segundos`,
         title: 'Venceu!',
     }).then((resultado) =>{
         if(resultado.isConfirmed){
