@@ -3,8 +3,8 @@ const timer = document.querySelector('.timer');
 var rows = 3;
 var columns = 3;
 
-var carrTile;
-var otherTile; //em branco
+var currTile;
+var otherTile; //em branco 
 
 var turns = 0;
 
@@ -113,4 +113,26 @@ function dragEnd() {
 
         turns += 1;
         document.getElementById("turns").innerText = turns;
+
+        checkOrder();
     }
+
+function checkOrder() {
+    let currentOrder = []; //array p armazenar ordem atual
+
+    //obtém ordem atual
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < columns; c++) {
+            let tile = document.getElementById(r.toString() + c.toString());
+            let imgNumber = tile.src.split("/").pop().split(".")[0]; // Extrai o número da imagem do src
+            currentOrder.push(imgNumber);
+        }
+    }
+}
+
+    // Compara a ordem atual com a ordem correta
+    if (JSON.stringify(currentOrder) === JSON.stringify(imgOrderCerta)) {
+        alert("Parabéns! Você completou o slide puzzle!");
+    }
+
+
