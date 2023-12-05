@@ -2,7 +2,7 @@ const grid = document.querySelector('.grid');//armazenar as cartas do jogo.
 const spanJogador = document.querySelector('.jogador');//nome do jogador
 const timer = document.querySelector('.timer');//tempo
 
-/*array para armazenar as cartas do jogo*/
+/*array para armazenar as imagens das cartas do jogo*/
 const personagens = [
     'franchesco',
     'carros',
@@ -123,7 +123,7 @@ const criarCarta = (personagens) => {
 /* duplicando as cartas do jogo com as imagens do array*/
 const carregarJogo = () => {
 
-    const duplicarPersonagem = [ ...personagens, ...personagens]; /* duplicação das cartas*/
+    const duplicarPersonagem = [ ...personagens, ...personagens]; /* duplicação do array*/
 
 
     const sortearArray = duplicarPersonagem.sort( () => Math.random() - 0.5 ); /*sorteador da ordem das cartas*/

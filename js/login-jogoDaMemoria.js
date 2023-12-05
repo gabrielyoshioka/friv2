@@ -14,9 +14,9 @@ const validarInput = ({target}) =>{
 
 //Esta função recebe um objeto de evento como entrada.
 const infoEnviar = (event) => {
-    event.preventDefault(); //Ela impede o comportamento padrão de envio do formulário usando
+    event.preventDefault(); //Ela impede o comportamento padrão de envio do formulário
 
-    localStorage.setItem('player', input.value);//Ela armazena o valor de entrada no armazenamento local usando
+    localStorage.setItem('player', input.value);//Ela armazena o valor de entrada no armazenamento local
     window.location.href = 'jogoDaMemoria.html';//redireciona para a pagina do jogo
 }
 
