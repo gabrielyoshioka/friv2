@@ -3,7 +3,7 @@ const timer = document.querySelector('.timer');
 var rows = 3;
 var columns = 3;
 
-var currTile;
+var carrTile;
 var otherTile; //em branco 
 
 var turns = 0;
