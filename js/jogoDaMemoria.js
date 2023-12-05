@@ -1,6 +1,6 @@
-const grid = document.querySelector('.grid');
-const spanJogador = document.querySelector('.jogador');
-const timer = document.querySelector('.timer');
+const grid = document.querySelector('.grid');//armazenar as cartas do jogo.
+const spanJogador = document.querySelector('.jogador');//nome do jogador
+const timer = document.querySelector('.timer');//tempo
 
 /*array para armazenar as cartas do jogo*/
 const personagens = [
@@ -46,7 +46,7 @@ let primeiraCarta = '';
 let segundaCarta = '';
 
 const checarFimJogo = () =>{
-    const disabledCartas = document.querySelectorAll('.disabled-carta');
+    const disabledCartas = document.querySelectorAll('.disabled-carta');//seleciona as cartas desabilitadas
 
     if(disabledCartas.length == 20){
         clearInterval(this.loop);
@@ -108,7 +108,7 @@ const criarCarta = (personagens) => {
     const frente = createElement('div', 'face frente');
     const verso = createElement('div', 'face verso');
 
-
+    //chamando a imagem através do array
     frente.style.backgroundImage = `url('../images/jogo-da-memoria/${personagens}.png')`;
     carta.appendChild(frente);
     carta.appendChild(verso);
@@ -120,7 +120,7 @@ const criarCarta = (personagens) => {
 
 }
 
-/* criar as cartas do jogo com as imagens do array*/
+/* duplicando as cartas do jogo com as imagens do array*/
 const carregarJogo = () => {
 
     const duplicarPersonagem = [ ...personagens, ...personagens]; /* duplicação das cartas*/
